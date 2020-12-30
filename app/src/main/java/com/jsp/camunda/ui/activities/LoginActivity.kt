@@ -3,7 +3,6 @@ package com.jsp.camunda.ui.activities
 import android.content.Intent
 import android.os.Bundle
 import androidx.lifecycle.Observer
-import com.jsp.camunda.MainActivity
 import com.jsp.camunda.R
 import com.jsp.camunda.repository.dao.rest.dto.Login
 import com.jsp.camunda.ui.activities.base.BaseActivity

@@ -11,7 +11,7 @@ import com.jsp.camunda.ui.adapters.holders.TaskHolder
 
 class TasksAdapter(var listener: TasksAdapterListener) : BaseRecyclerAdapter<Task, TaskHolder>() {
     interface TasksAdapterListener{
-        fun onLoadClick(task: Task)
+        fun onTaskClick(task: Task)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaskHolder {

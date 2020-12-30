@@ -21,6 +21,6 @@ class TaskHolder(
     }
 
     private fun onClickTask(task: Task){
-        listener.onLoadClick(task)
+        listener.onTaskClick(task)
     }
 }
