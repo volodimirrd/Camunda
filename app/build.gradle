@@ -22,11 +22,11 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField("String", "BASE_API_URL", "\"http://jetbpm.jetsoftpro.com/engine-rest/\"")
+            buildConfigField("String", "BASE_API_URL", "\"https://jetbpm.jetsoftpro.com/engine-rest/\"")
         }
         debug {
             signingConfig signingConfigs.debug
-            buildConfigField("String", "BASE_API_URL", "\"http://jetbpm.jetsoftpro.com/engine-rest/\"")
+            buildConfigField("String", "BASE_API_URL", "\"https://jetbpm.jetsoftpro.com/engine-rest/\"")
         }
     }
 
@@ -68,4 +68,6 @@ dependencies {
     //Koin
     implementation "org.koin:koin-core:$koin_version"
     implementation "org.koin:koin-android-viewmodel:$koin_version"
+
+    implementation 'info.guardianproject.netcipher:netcipher:2.1.0'
 }
