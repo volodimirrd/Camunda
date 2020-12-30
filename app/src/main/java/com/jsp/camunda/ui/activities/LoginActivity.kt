@@ -41,7 +41,7 @@ class LoginActivity: BaseActivity() {
     }
 
     private fun userLogin(){
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, TasksActivity::class.java)
         startActivity(intent)
     }
 }

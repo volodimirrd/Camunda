@@ -7,4 +7,7 @@
     <string name="password">Password</string>
     <string name="enter_password">Enter password</string>
     <string name="login">Login</string>
+
+    <!--Tasks-->
+    <string name="created_time">Created time:</string>
 </resources>

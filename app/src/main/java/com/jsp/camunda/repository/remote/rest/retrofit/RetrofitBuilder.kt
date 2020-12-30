@@ -1,9 +1,6 @@
 package com.jsp.camunda.repository.remote.rest.retrofit
 
-import android.content.Context
-import android.net.ConnectivityManager
 import okhttp3.Dispatcher
-import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
