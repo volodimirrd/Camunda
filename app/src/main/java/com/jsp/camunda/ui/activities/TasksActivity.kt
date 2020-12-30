@@ -1,6 +1,10 @@
 package com.jsp.camunda.ui.activities
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -24,6 +28,23 @@ class TasksActivity: BaseActivity(), TasksAdapter.TasksAdapterListener {
         lifecycle.addObserver(viewModel)
         viewModel.reloadTasks()
         init()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_logout, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.menuLogout){
+            openLogin()
+        }
+        return false
+    }
+
+    private fun openLogin(){
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
     }
 
     private fun init(){
@@ -53,7 +74,7 @@ class TasksActivity: BaseActivity(), TasksAdapter.TasksAdapterListener {
         viewModel.tasks.get()?.let { adapter.replaceAll(it) }
     }
 
-    override fun onLoadClick(task: Task) {
+    override fun onTaskClick(task: Task) {
         //todo "Not yet implemented"
     }
 

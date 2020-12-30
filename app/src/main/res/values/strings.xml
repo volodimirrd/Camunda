@@ -10,4 +10,7 @@
 
     <!--Tasks-->
     <string name="created_time">Created time:</string>
+
+    <!--menu-->
+    <string name="logout">Logout</string>
 </resources>
