@@ -10,6 +10,8 @@
 
     <!--Tasks-->
     <string name="created_time">Created time:</string>
+    <string name="description">Description:</string>
+    <string name="due">Due:</string>
 
     <!--menu-->
     <string name="logout">Logout</string>
