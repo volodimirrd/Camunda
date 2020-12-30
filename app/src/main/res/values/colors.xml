@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="white">#ffffff</color>
-    <color name="colorPrimary">#75C998</color>
-    <color name="colorPrimaryDark">#326F4F</color>
-    <color name="colorAccent">#75C998</color>
+    <color name="colorPrimary">#78a22f</color>
+    <color name="colorPrimaryDark">#729732</color>
+    <color name="colorAccent">#78a22f</color>
 
 
     <color name="darkTextPrimary">#0C2831</color>
@@ -11,6 +11,6 @@
     <color name="darkHintAd">#4F595C</color>
     <color name="grayHeader">#E6E5EB</color>
     <color name="darkHint">#AAB4B8</color>
-    <color name="darkBlue">#0D7DD6</color>
+    <color name="green">#c2cd23</color>
     <color name="lightHint">#828282</color>
 </resources>
